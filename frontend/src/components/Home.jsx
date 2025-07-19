@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from '../assets/logo.webp';
-
+import logo from "../../public/logo.webp";
 import { Link } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
@@ -11,7 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import toast from "react-hot-toast";
 import { BACKEND_URL } from "../utils/utils";
-export default function Home() {
+function Home() {
   const [courses, setCourses] = useState([]);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -249,3 +248,4 @@ export default function Home() {
   );
 }
 
+export default Home;
